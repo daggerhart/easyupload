@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_form_alter()
+ */
+function easyupload_form_alter(&$form, &$form_state, $form_id){
+  // auto click the upload button for files
+  if ( isset($form['#node_edit_form']) ){
+    $form['#attached']['js'] = array(
+      drupal_get_path('module', 'easyupload') . '/easyupload.js',
+    );
+  }
+}

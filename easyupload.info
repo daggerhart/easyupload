@@ -1,0 +1,4 @@
+name = Easy Upload
+description = Simplifies file/image field uploads by automatically clicking the "Upload" submit button with javascript
+version = 7.x-0.1
+core = 7.x
